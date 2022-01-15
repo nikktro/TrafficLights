@@ -18,21 +18,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Kaq-Lb-37G">
-                                <rect key="frame" x="140" y="84" width="134" height="453"/>
+                                <rect key="frame" x="157" y="84" width="100" height="350"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rnp-sX-wKf">
-                                        <rect key="frame" x="0.0" y="0.0" width="134" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="rnp-sX-wKf" secondAttribute="height" multiplier="1:1" id="XcQ-Ej-wNa"/>
+                                            <constraint firstAttribute="width" constant="100" id="2Jb-26-7Pb"/>
+                                            <constraint firstAttribute="height" constant="100" id="YHD-gu-9LZ"/>
                                         </constraints>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xaa-ZM-wRy">
-                                        <rect key="frame" x="0.0" y="159.5" width="134" height="134.5"/>
+                                        <rect key="frame" x="0.0" y="125" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemYellowColor"/>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="O22-nW-ccM">
-                                        <rect key="frame" x="0.0" y="319" width="134" height="134"/>
+                                        <rect key="frame" x="0.0" y="250" width="100" height="100"/>
                                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                                     </view>
                                 </subviews>
@@ -56,9 +57,13 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2Yz-1d-no1" secondAttribute="trailing" constant="16" id="fiE-13-ejq"/>
                             <constraint firstItem="2Yz-1d-no1" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="hN5-7s-p3R"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Yz-1d-no1" secondAttribute="bottom" constant="16" id="lhl-c0-DyG"/>
-                            <constraint firstItem="rnp-sX-wKf" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.15" id="rpG-BT-Cfj"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="greenLightView" destination="O22-nW-ccM" id="6Og-Zk-ENf"/>
+                        <outlet property="redLightView" destination="rnp-sX-wKf" id="cON-GH-xHE"/>
+                        <outlet property="yellowLightView" destination="Xaa-ZM-wRy" id="uac-2i-7Tr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
